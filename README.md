@@ -26,7 +26,7 @@ ls -d /mnt/c/Users/rtang/Pictures/23-31JANUARY2020-BERLIN-ALL_HANDS/*.jpg > berl
 /print-file-width-length-max75-x-max75-y.rb berlin_jpg_filenames.txt > berlin-75px-75px-max-x-maxy.txt
 ```
 
-* 5\. Create the 75px by 75 px patches
+* 5\. Create 1000 75px by 75 px patches. Maybe do 1000 at a time for a total of 10,000
 
 ```bash
 mkdir 75PX_BY_75PX_PATCHES
