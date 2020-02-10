@@ -13,3 +13,9 @@ magick dsc_3671_49469147273_o.jpg -crop 75x75+2000+2000 +repage croptest.jpg
 ```
 
 * 2\. use pixel_x_dimension and pixel_y_dimension from https://github.com/tonytonyjan/exif get width and height
+
+* 3\. use this file list:
+
+```bash
+ls -d /mnt/c/Users/rtang/Pictures/23-31JANUARY2020-BERLIN-ALL_HANDS/*.jpg > berlin_jpg_filenames.txt
+```
