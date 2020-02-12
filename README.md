@@ -32,4 +32,5 @@ ls -d /mnt/c/Users/rtang/Pictures/23-31JANUARY2020-BERLIN-ALL_HANDS/*.jpg > berl
 mkdir 75PX_BY_75PX_PATCHES
 cd !$
 ../create-75px-75px-patches.rb ../berlin-75px-75px-max-x-maxy.txt 1000
+../create-75px-75px-patches.rb ../berlin-75px-75px-max-x-maxy.txt 9000
 ```
