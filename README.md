@@ -19,6 +19,12 @@ cat berlin_jan2020_75x75_jpg_filenames.txt  | \
 ../print-file-colorname-hex-color.rb > berlin_jan2020_file_colorname_hexcolor.csv
 ```
 
+c) to get an idea of the number of each colour, cut out the'file' field which is unique
+
+```bash
+mlr --csv cut -x -f 'file' *.csv | more
+```
+
 ## 09february2020
 
 * 1\. how to crop an image to 75x75
