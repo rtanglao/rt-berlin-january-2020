@@ -32,6 +32,12 @@ mlr --csv --implicit-csv-header --headerless-csv-output \
 cut -f 1 red-berlin-january2020.txt > just-red-files-berlin-january2020.txt
 ```
 
+e) shuffle the order of the red filenames
+
+```bash
+shuf just-red-files-berlin-january2020.txt > shuffled-just-red-files-berlin-january2020.txt
+```
+
 ## 09february2020
 
 * 1\. how to crop an image to 75x75
