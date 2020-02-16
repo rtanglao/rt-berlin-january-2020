@@ -18,6 +18,8 @@ ARGF.each_line do |line|
 		logger.debug "SKIPPING because dominant colour is nil"
 		next
 	end
+	# replace "[:white]" with "white"
+	dominant_colour = dominant_colour.tr(":[]", '')
 	hex_colour = Color::CSS[dominant_colour].html
 	printf("%s,%s,%s\n", file, dominant_colour, hex_colour)
 end
