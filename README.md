@@ -46,6 +46,13 @@ cat shuffled-just-red-files-berlin-january2020.txt | \
 parallel magick '{}' -vignette 0x0+0+0 'RED_CIRCULAR/{/}'
 ```
 
+g) shuffle 240 jpegs (24 * 10) and then create a png from all 240
+
+```bash
+ls -1 *.jpg | shuf -n 240 > shuffled-240-red-jpgs.txt
+montage -verbose -adjoin -tile 24x10 +frame +shadow +label -adjoin \
+-geometry '75x75+0+0<' @shuffled-240-red-jpgs.txt shuffled_red_berlin_jan_2020.png
+```
 ## 09february2020
 
 * 1\. how to crop an image to 75x75
