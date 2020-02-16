@@ -38,6 +38,14 @@ e) shuffle the order of the red filenames
 shuf just-red-files-berlin-january2020.txt > shuffled-just-red-files-berlin-january2020.txt
 ```
 
+f) make red circular thumbnails
+
+```bash
+mkdir RED_CIRCULAR
+cat shuffled-just-red-files-berlin-january2020.txt | \
+parallel magick '{}' -vignette 0x0+0+0 'RED_CIRCULAR/{/}'
+```
+
 ## 09february2020
 
 * 1\. how to crop an image to 75x75
