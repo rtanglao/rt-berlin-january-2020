@@ -5,11 +5,18 @@ swag from berlin photos from berlin all hands january 2020
 
 * 1\. get average color
 
-first get filnames of the patches
+a) first get filenames of the patches
 
 ```bash
 ls -d /home/rtanglao/GIT/rt-berlin-january-2020/75PX_BY_75PX_PATCHES/*.jpg  \
 > berlin_jan2020_75x75_jpg_filenames.txt
+```
+
+b) then get average color of the patches
+
+```bash
+cat berlin_jan2020_75x75_jpg_filenames.txt  | \
+../print-file-colorname-hex-color.rb > berlin_jan2020_file_colorname_hexcolor.csv
 ```
 
 ## 09february2020
