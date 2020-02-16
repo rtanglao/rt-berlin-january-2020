@@ -1,6 +1,17 @@
 # rt-berlin-january-2020
 swag from berlin photos from berlin all hands january 2020
 
+## 15february2020 get average color of patches
+
+* 1\. get average color
+
+first get filnames of the patches
+
+```bash
+ls -d /home/rtanglao/GIT/rt-berlin-january-2020/75PX_BY_75PX_PATCHES/*.jpg  \
+> berlin_jan2020_75x75_jpg_filenames.txt
+```
+
 ## 09february2020
 
 * 1\. how to crop an image to 75x75
