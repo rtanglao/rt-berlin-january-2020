@@ -25,6 +25,13 @@ c) to get an idea of the number of each colour, cut out the'file' field which is
 mlr --csv cut -x -f 'file' *.csv | more
 ```
 
+d) create a file with just the red filenames, no colour or hex colour fields
+
+```bash
+mlr --csv --implicit-csv-header --headerless-csv-output \
+cut -f 1 red-berlin-january2020.txt > just-red-files-berlin-january2020.txt
+```
+
 ## 09february2020
 
 * 1\. how to crop an image to 75x75
