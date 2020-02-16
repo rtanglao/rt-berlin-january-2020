@@ -5,6 +5,8 @@ require 'awesome_print'
 require 'colorname'
 require 'color'
 require 'logger'
+logger = Logger.new(STDERR)
+logger.level = Logger::DEBUG
 
 puts 'file,colourname,hexcolour'
 ARGF.each_line do |line|
