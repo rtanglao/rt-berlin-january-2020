@@ -1,6 +1,18 @@
 # rt-berlin-january-2020
 swag from berlin photos from berlin all hands january 2020
 
+## 16february2020 artofwhere.com tights
+
+* 1\. create circular thumbnails
+
+```bash
+mkdir BLACK_CIRCULAR
+mlr --csv --implicit-csv-header --headerless-csv-output \
+cut -f 1 black-berlin-january2020.txt > just-black-files-berlin-january2020.txt
+cat just-black-files-berlin-january2020.txt | \
+parallel magick '{}' -vignette 0x0+0+0 'BLACK_CIRCULAR/{/}'
+```
+
 ## 15february2020 get average color of patches
 
 * 1\. get average color
