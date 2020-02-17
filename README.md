@@ -13,6 +13,11 @@ cat just-black-files-berlin-january2020.txt | \
 parallel magick '{}' -vignette 0x0+0+0 'BLACK_CIRCULAR/{/}'
 ```
 
+* 2\. make artofwhere graphic
+    * 3400 / 75 px = 45 rows one way i.e. "horizontally"
+    * 6358 -> 6400 / 75 px = 85 rows the other way "vertically"
+    * 45 * 85 = 3825 circular thumbnails
+
 ## 15february2020 get average color of patches
 
 * 1\. get average color
