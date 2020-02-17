@@ -18,6 +18,17 @@ parallel magick '{}' -vignette 0x0+0+0 'BLACK_CIRCULAR/{/}'
     * 6358 -> 6400 / 75 px = 85 rows the other way "vertically"
     * 45 * 85 = 3825 circular thumbnails
 
+```bash
+cd BLACK_CIRCULAR
+ls -1 *.jpg | shuf -n 3825 > right-leg-shuffled-3825-black-jpgs.txt
+ls -1 *.jpg | shuf -n 3825 > left-leg-shuffled-3825-black-jpgs.txt
+montage -verbose -adjoin -tile 45x85 +frame +shadow +label -adjoin \
+-geometry '75x75+0+0<' @right-leg-shuffled-3825-black-jpgs.txt \
+right-leg_artofwhere_berlin_jan_2020.png
+montage -verbose -adjoin -tile 45x85 +frame +shadow +label -adjoin \
+-geometry '75x75+0+0<' @left-leg-shuffled-3825-black-jpgs.txt \
+left-leg_artofwhere_berlin_jan_2020.png
+```
 ## 15february2020 get average color of patches
 
 * 1\. get average color
