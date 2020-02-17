@@ -18,6 +18,9 @@ ARGF.each_line do |line|
 		logger.debug "SKIPPING because dominant colour is nil"
 		next
 	end
+	comma_index = dominant_colour.index(',')
+	dominant_colour = dominant_colour[0, comma_index] if !comma_index.nil?
+    #logger.debug("dominant_colour after removing comma:" + dominant_colour)
 	# replace "[:white]" with "white"
 	dominant_colour = dominant_colour.tr(":[]", '')
 	hex_colour = Color::CSS[dominant_colour].html
