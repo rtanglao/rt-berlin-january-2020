@@ -51,6 +51,10 @@ c) to get an idea of the number of each colour, cut out the'file' field which is
 
 ```bash
 mlr --csv cut -x -f 'file' *.csv | more
+grep black  berlin_jan2020_file_colorname_hexcolor.csv > black-berlin-january2020.txt
+grep red  berlin_jan2020_file_colorname_hexcolor.csv > red-berlin-january2020.txt
+grep green  berlin_jan2020_file_colorname_hexcolor.csv > gren-berlin-january2020.txt
+grep blue  berlin_jan2020_file_colorname_hexcolor.csv > blue-berlin-january2020.txt
 ```
 
 d) create a file with just the red filenames, no colour or hex colour fields
