@@ -14,9 +14,9 @@ parallel magick '{}' -vignette 0x0+0+0 'BLACK_CIRCULAR/{/}'
 ```
 
 * 2\. make artofwhere graphic
-    * 3400 / 75 px = 45 rows one way i.e. "horizontally"
-    * 6358 -> 6400 / 75 px = 85 rows the other way "vertically"
-    * 45 * 85 = 3825 circular thumbnails
+    * 3400 / 75 px = 46 rows one way i.e. "horizontally"
+    * 6400 / 75 px = 86 rows the other way "vertically"
+    * 46 * 86 = 3956 circular thumbnails
 
 ```bash
 cd BLACK_CIRCULAR
